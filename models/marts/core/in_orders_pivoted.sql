@@ -11,7 +11,7 @@ pivoted as (
 
      {% if not loop.last%}
      sum(case when payment_method = {{ payment_method }} then amount else 0 end ) as {{payment_method}}_amount,
-     {%end if%}
+     {% endif %}
      sum(case when payment_method = {{ payment_method }} then amount else 0 end ) as {{payment_method}}_amount 
      {% endfor % }
      from payments
