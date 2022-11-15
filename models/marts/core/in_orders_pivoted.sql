@@ -11,7 +11,7 @@ pivoted as (
      sum(case when payment_method = {{ payment_method }} then amount else 0 end ) as {{payment_method}}_amount,
      {%- endif -%}
      sum(case when payment_method = {{ payment_method }} then amount else 0 end ) as {{payment_method}}_amount 
-     {%- endfor -% }
+     {%- endfor -%}
      from payments
      where status = 'success'
      group by order_id
