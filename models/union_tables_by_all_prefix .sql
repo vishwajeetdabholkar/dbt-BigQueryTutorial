@@ -2,7 +2,7 @@
 
       database='bqdemo-338306',
       schema='jaffle_shop', 
-      prefix='orders__'
+      prefix='all__'
         
       )
       
